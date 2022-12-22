@@ -1,9 +1,15 @@
 <x-app-layout>
-    <x-slot name="header">
+    {{-- <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
+            {{ __('Report Produksi') }}
         </h2>
-    </x-slot>
+    </x-slot> --}}
+
+    <header class="bg-white shadow w-full">
+        <div class="max-w-8xl py-6 px-4 sm:px-6 lg:px-8">
+            {{ __('Report Produksi') }}
+        </div>
+    </header>
 
     <x-breadcrumbs>
         <li class="inline-flex items-center">

@@ -1,5 +1,5 @@
 <div class="py-6">
-    <div class="max-w-xs ml-14 sm:px-6 lg:px-8">
+    <div class="max-w-xs lg:px-6">
         <div class="bg-white p-4 flex items-center flex-wrap rounded-lg">
             <ul class="flex items-center">
             <li class="inline-flex items-center">
@@ -11,6 +11,7 @@
             </li>
         
             {{ $slot }}
+            
             </ul>
         </div>
     </div>

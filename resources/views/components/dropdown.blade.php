@@ -13,7 +13,9 @@ switch ($width) {
         {{ $trigger }}
     </x-slot:trigger>
 
+    @isset($content)    
     <div class="mt-2 {{ $width }} rounded-md shadow-lg ring-1 ring-black ring-opacity-5 py-1 bg-white">
         {{ $content }}
     </div>
+    @endisset
 </x-splade-dropdown>
