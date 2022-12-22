@@ -3,7 +3,7 @@
 
         {{-- navigation bar --}}
         @include('layouts.navigation')
-
+        
         <!-- Page Heading -->
         @isset($header)    
         <header class="bg-white shadow">
@@ -12,9 +12,10 @@
             </div>
         </header>
         @endisset
-
+        
         <!-- Page Content -->
         <main class="flex-auto flex-col">
+            @include('layouts.header')
             {{ $slot }}
         </main>
 
