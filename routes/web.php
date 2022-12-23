@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DailyReportController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RecapController;
 use App\Http\Controllers\Test;
 use Illuminate\Support\Facades\Route;
 
@@ -27,15 +29,19 @@ Route::middleware('splade')->group(function () {
     });
 
     Route::middleware('auth')->group(function () {
+
         Route::get('/dashboard', function () {
             return view('dashboard');
         })->middleware(['verified'])->name('dashboard');
 
-        // Route::get('/dashboard', [Test::class, 'index'])->name('dashboard');
-
+        // starter route
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
         Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
         Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+
+        Route::get('/daily-report', [DailyReportController::class, 'index'])->name('daily-report.index');
+        Route::get('/recap', [RecapController::class, 'index'])->name('recap.index');
     });
 
     require __DIR__.'/auth.php';

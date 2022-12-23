@@ -8,17 +8,13 @@
     <x-breadcrumbs>
         <li class="inline-flex items-center">
             <a href="#" class="text-gray-600 hover:text-indigo-800">
-                Dashboard
+                Recap
             </a>
         </li>
     </x-breadcrumbs>
-    
-    {{-- card item --}}
-    <x-card></x-card>
 
+    <x-table>
 
-    {{-- main content --}}
-    <x-table></x-table>
-        
+    </x-table>
 
 </x-app-layout>

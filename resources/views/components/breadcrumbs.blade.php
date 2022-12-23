@@ -1,5 +1,5 @@
 <div class="py-6">
-    <div class="max-w-xs lg:px-8 mx-11">
+    <div class="max-w-xs lg:px-8 sm:px-4">
         <div class="bg-white p-4 flex items-center flex-wrap rounded-lg shadow-lg">
             <ul class="flex items-center">
             <li class="inline-flex items-center">
