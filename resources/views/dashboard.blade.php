@@ -5,12 +5,9 @@
         </h2>
     </x-slot> --}}
 
+    {{-- breadcrumbs --}}
     <x-breadcrumbs>
-        <li class="inline-flex items-center">
-            <a href="#" class="text-gray-600 hover:text-indigo-800">
-                Dashboard
-            </a>
-        </li>
+        {{ __('Dashboard') }}
     </x-breadcrumbs>
     
     {{-- card item --}}

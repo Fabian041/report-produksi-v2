@@ -14,11 +14,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // role table seed
+        $roles = ['administrator','SPV','LDR'];
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        for($i=0; $i<count($roles); $i++){
+            
+            \Illuminate\Support\Facades\DB::table('roles')->insert([
+                'role' => $roles[$i]
+            ]);
+        }
     }
 }

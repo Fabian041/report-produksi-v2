@@ -10,7 +10,11 @@
                 <span class="mx-4 h-auto text-gray-400 font-medium">/</span>
             </li>
         
-            {{ $slot }}
+                <li class="inline-flex items-center">
+                    <a href="#" class="text-gray-600 hover:text-indigo-800">
+                        {{ $slot }}
+                    </a>
+                </li>
             
             </ul>
         </div>

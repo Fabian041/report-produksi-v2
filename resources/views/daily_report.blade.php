@@ -5,15 +5,13 @@
         </h2>
     </x-slot> --}}
 
+    {{-- breadcrumbs --}}
     <x-breadcrumbs>
-        <li class="inline-flex items-center">
-            <a href="#" class="text-gray-600 hover:text-indigo-800">
-                Daily Report
-            </a>
-        </li>
+        {{ __('Daily Report') }}
     </x-breadcrumbs>
 
-    <x-main-content>
+    {{-- main content --}}
+    <x-form-container>
 
         <h3 class="text-2xl font-bold">Daily Report</h3>
 

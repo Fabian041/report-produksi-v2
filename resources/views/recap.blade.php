@@ -5,16 +5,12 @@
         </h2>
     </x-slot> --}}
 
+    {{-- breadcrumb --}}
     <x-breadcrumbs>
-        <li class="inline-flex items-center">
-            <a href="#" class="text-gray-600 hover:text-indigo-800">
-                Recap
-            </a>
-        </li>
+        {{ __('Recap') }}
     </x-breadcrumbs>
 
-    <x-table>
-
-    </x-table>
+    {{-- main content --}}
+    <x-table></x-table>
 
 </x-app-layout>
